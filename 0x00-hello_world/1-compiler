@@ -1,0 +1,2 @@
+gcc -S $CFILE -o CFILE.o
+
