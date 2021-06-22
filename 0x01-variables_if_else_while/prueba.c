@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-	char a[24] = "abcdfghijklmnoprstuvwxyz";
 	int r;
 
-for (r = 0; r < 24; r++)
+for (r = 'a'; r < 'z'; r++)
 {
-putchar(a[r]);
+if (r != 'e' && r != 'q')
+putchar(r);
 }
 putchar('\n');
 return (0);
