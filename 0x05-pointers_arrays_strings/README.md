@@ -1,0 +1,1 @@
+programing, pointetrs, arrays, strings.
