@@ -11,7 +11,7 @@ int k, j;
 
 unsigned int l = 0;
 
-for (k = 0; s[k] != ','; k++)
+for (k = 0; s[k] != ' '; k++)
 {
 for (j = 0; accept[j] != '\0'; j++)
 if (accept[j] == s[k])
