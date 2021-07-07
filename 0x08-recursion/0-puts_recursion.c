@@ -11,9 +11,8 @@ s++;
 if (*s != '\0')
 {
 _puts_recursion(s);
-s--;
 }
 else
 _putchar('\n');
-
+return;
 }
