@@ -8,10 +8,11 @@
  */
 int main(int argc, char *argv[]__attribute__((unused)))
 {
-int c;
-	for (c = 0; c < argc; c++)
+	int c = 0;
+	if (c <= argc)
 	{
-		printf("%d\n", c);
+		printf("%d\n", argc);
+	
 	}
 		return (0);
 }
