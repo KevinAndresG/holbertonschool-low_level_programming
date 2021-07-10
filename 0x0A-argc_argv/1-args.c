@@ -6,16 +6,12 @@
  * @argv: arguments vector
  * Return: Always 0.
  */
-int main(int argc, char *argv[])
+int main(int argc, char *argv[]__attribute__((unused)))
 {
 int c;
 	for (c = 0; c < argc; c++)
 	{
 		printf("%d\n", c);
-	}
-	if (argv[c])
-	{
-		return (c);
 	}
 		return (0);
 }
