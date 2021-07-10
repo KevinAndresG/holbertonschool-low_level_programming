@@ -15,7 +15,7 @@ int c;
 	}
 	if (argv[c])
 	{
-		return (0);
+		return (c);
 	}
 		return (0);
 }
