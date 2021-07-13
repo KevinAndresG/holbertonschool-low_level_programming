@@ -9,16 +9,20 @@
 
 char *create_array(unsigned int size, char c)
 {
-unsigned int n;
-char *j;
-if (size == 0)
-{
-return ('\0');
-}
-j = malloc(size * sizeof(c));
-for (n = 0; n <= size; n++)
-{
-j[n] = c;
-}
+	unsigned int n;
+	char *j;
+	if (size == 0)
+	{
+		return (NULL);
+	}
+	j = malloc(size * sizeof(char));
+	if (j == 0)
+	{
+		return(NULL);
+	}
+	for (n = 0; n <= size; n++)
+	{
+	j[n] = c;
+	}
 return (j);
 }
