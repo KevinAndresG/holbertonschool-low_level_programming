@@ -1,9 +1,10 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * Create_array - object
+ * create_array - object.
  * @size: int
  * @c: char
+ * Return: a pointer
  */
 
 char *create_array(unsigned int size, char c)
@@ -19,5 +20,5 @@ for (n = 0; n <= size; n++)
 {
 j[n] = c;
 }
-return(j);
+return (j);
 }
