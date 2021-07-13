@@ -20,5 +20,9 @@ for (n = 0; n <= size; n++)
 {
 j[n] = c;
 }
-return (j);
+if (j == 0)
+{
+	return ('\0');
+}
+return(j);
 }
