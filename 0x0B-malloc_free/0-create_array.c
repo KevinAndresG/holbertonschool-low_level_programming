@@ -15,7 +15,7 @@ if (size == 0)
 {
 return ('\0');
 }
-j = (char *) malloc(size * sizeof(char));
+j = malloc(size);
 for (n = 0; n <= size; n++)
 {
 j[n] = c;
