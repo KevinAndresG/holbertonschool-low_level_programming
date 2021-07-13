@@ -15,10 +15,10 @@ if (size == 0)
 {
 return ('\0');
 }
-j = malloc(size);
+j = malloc(size * sizeof(c));
 for (n = 0; n <= size; n++)
 {
 j[n] = c;
 }
-return (*j);
+return (j);
 }
