@@ -15,14 +15,10 @@ if (size == 0)
 {
 return ('\0');
 }
-j = malloc(size * sizeof(char));
+j = (char*) malloc(size * sizeof(char));
 for (n = 0; n <= size; n++)
 {
 j[n] = c;
-}
-if (j == 0)
-{
-	return ('\0');
 }
 return(j);
 }
