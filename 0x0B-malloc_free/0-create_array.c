@@ -20,5 +20,5 @@ for (n = 0; n <= size; n++)
 {
 j[n] = c;
 }
-return (j);
+return (*j);
 }
