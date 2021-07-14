@@ -9,25 +9,25 @@
 char *_strdup(char *str)
 {
 
-int a = 0;
-int b;
+int k = 0;
+int f;
 char *h;
 if (str == NULL)
 {
 return (NULL);
 }
-while (str[a] != '\0')
+while (str[k] != '\0')
 {
-a++;
+k++;
 }
-h = malloc((a + 1) * sizeof(char));
+h = malloc((k + 1) * sizeof(char));
 if (h == 0)
 {
 return (0);
 }
-for (b = 0; b <= a; b++)
+for (f = 0; f <= k; f++)
 {
-h[b] = str[b];
+h[f] = str[f];
 }
 return (h);
 }
