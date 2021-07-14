@@ -10,26 +10,20 @@
 	char *str_concat(char *s1, char *s2)
 	{
 	char *k;
-	int m;
-	int n;
+	int m = 0;
+	int n = 0;
 	int o;
 	int p;
 
-	if (s1 == NULL)
+	if (s1 != NULL)
 	{
-		m = 0;
+	for (m = 0; s1[m] != '\0'; m++)
+	{}
 	}
-	else
+	if (s2 != NULL)
 	{
-	for (m = 0; s1[m] != '\0'; m++){}
-	}
-	if (s2 == NULL)
-	{
-		n = 0;
-	}
-	else
-	{
-	for (n = 0; s2[n] != '\0'; n++){}
+	for (n = 0; s2[n] != '\0'; n++)
+	{}
 	}
 	p = m + n;
 	k = malloc((p + 1) * sizeof(char));
@@ -37,7 +31,6 @@
 	{
 		return (0);
 	}
-	
 	for (o = 0; o < p; o++)
 	{
 		if (o < m)
@@ -49,6 +42,5 @@
 		k[o] = s2[o - m];
 	}
 	}
-
 	return (k);
 	}
