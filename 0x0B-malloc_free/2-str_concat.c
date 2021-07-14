@@ -27,9 +27,8 @@
 	{
 
 	}
-	n++;
 	p = m + n;
-	k = malloc((p + 1) * sizeof(char));
+	k = malloc((p + 2) * sizeof(char));
 	if (k == 0)
 	{
 		return (0);
