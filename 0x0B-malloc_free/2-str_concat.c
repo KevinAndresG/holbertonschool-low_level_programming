@@ -15,7 +15,7 @@
 	int o;
 	int p;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL && s2 == NULL)
 	{
 		return (0);
 	}
@@ -27,8 +27,7 @@
 	{
 
 	}
-	p = m + n + 1;
-
+	p = m + n;
 	k = malloc((p + 1) * sizeof(char));
 
 	if (k == 0)
