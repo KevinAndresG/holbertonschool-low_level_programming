@@ -15,20 +15,24 @@
 	int o;
 	int p;
 
-	if (s1 == NULL && s2 == NULL)
+	if (s1 == NULL)
 	{
-		return (0);
+		m = 0;
 	}
-	for (m = 0; s1[m] != '\0'; m++)
+	else
 	{
-
+	for (m = 0; s1[m] != '\0'; m++){}
 	}
-	for (n = 0; s2[n] != '\0'; n++)
+	if (s2 == NULL)
 	{
-
+		n = 0;
+	}
+	else
+	{
+	for (n = 0; s2[n] != '\0'; n++){}
 	}
 	p = m + n;
-	k = malloc((p + 2) * sizeof(char));
+	k = malloc((p + 1) * sizeof(char));
 	if (k == 0)
 	{
 		return (0);
