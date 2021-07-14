@@ -22,9 +22,9 @@ if (h == 0)
 {
 return (0);
 }
-if (str == 0)
+if (str == NULL)
 return (NULL);
-for (b = 0; b <= a; b++)
+for (b = 0; b < a; b++)
 {
 h[b] = str[b];
 }
