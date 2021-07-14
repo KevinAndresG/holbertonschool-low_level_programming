@@ -27,12 +27,13 @@
 	{
 
 	}
-	p = m + n;
+	p = m + n + 1;
+
 	k = malloc((p + 1) * sizeof(char));
 
 	if (k == 0)
 	{
-	return (0);
+		return (0);
 	}
 	for (o = 0; o < p; o++)
 	{
