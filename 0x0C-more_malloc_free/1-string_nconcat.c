@@ -1,7 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
 #include <string.h>
-
 /**
  * string_nconcat - function that allocates memory using malloc.
  * @s1: a char pointer
@@ -17,14 +16,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int conc = 0;
 	unsigned int q = 0;
 
-	if (s1 == NULL)
-	{
-	s1 = "";
-	}
-	if (s2 == NULL)
-	{
-	s2 = "";
-	}
 	if (s1 != 0)
 	{
 	for (k = 0; s1[k] != '\0'; k++)
