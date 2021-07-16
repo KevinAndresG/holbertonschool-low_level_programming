@@ -18,31 +18,34 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s1 != 0)
 	{
-	for (k = 0; s1[k] != '\0'; k++)
-	{}
+		for (k = 0; s1[k] != '\0'; k++)
+		{
+		}
 	}
 	if (s2 != 0)
 	{
 		for (p = 0; s2[p] != s2[n]; p++)
-		{}
+		{
+		}
 
-	conc = k + p;
-	m = malloc(conc * sizeof(char));
-	if (m == 0)
-	{
-		return (0);
-	}
-	for (q = 0; q < conc; q++)
-	{
-		if (q < k)
+		conc = k + p;
+		m = malloc((1 + conc) * sizeof(char));
+		if (m == 0)
 		{
-			m[q] = s1[q];
+			return (0);
 		}
-		else
+		for (q = 0; q < conc; q++)
 		{
-		m[q] = s2[q - k];
+			if (q < k)
+			{
+				m[q] = s1[q];
+			}
+			else
+			{
+				m[q] = s2[q - k];
+			}
 		}
+		m[q] = '\0';
 	}
-}
 	return (m);
 }
