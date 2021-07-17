@@ -15,23 +15,23 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	if (min != 0)
-	{
-		for (f = 0; f <= min; f++)
-		{
-		}
-	}
-	if (max != 0)
-	{
-		for (g = 0; g <= max; g++)
-		{
-		}
-	}
-	f = f + g;
-	k = malloc(f);
+
+	g = max - min;
+	g++;
+
+	k = malloc(g * sizeof(int));
 	if (k == 0)
 	{
 		return (NULL);
 	}
+	for (f = 0; f < g; f++)
+	{
+		if (min <= max)
+		{
+			k[f] = min;
+			min++;
+		}
+	}
+
 	return (k);
 }
