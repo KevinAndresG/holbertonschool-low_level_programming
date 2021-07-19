@@ -1,6 +1,10 @@
 #include "macro.h"
-int main ()
+/**
+ * main - main function
+ * Return: an int
+ */
+int main(void)
 {
-	printf("%s\n", PWD);
-	return (0);
+printf("%s\n", PWD);
+return (0);
 }
