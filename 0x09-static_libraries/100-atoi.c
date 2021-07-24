@@ -1,4 +1,4 @@
-  #include "holberton.h"
+#include "holberton.h"
 
 /**
 * _puts - function that returns the length of a string.

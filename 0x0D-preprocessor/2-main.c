@@ -1,4 +1,5 @@
 #include "macro.h"
+
 /**
  * main - main function
  * Return: an int
