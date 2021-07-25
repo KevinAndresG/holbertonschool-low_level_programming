@@ -21,22 +21,24 @@ void print_all(const char *const format, ...)
 	};
 
 	va_start(count, format);
-
-	while (format[j] != '\0')
+	if (format)
 	{
-		int o = 0;
-
-		while (nmjm[o].save != NULL)
+		while (format[j] != '\0')
 		{
-			if (format[j] == *(nmjm[o].save))
+			int o = 0;
+
+			while (nmjm[o].save != NULL)
 			{
-				printf("%s", sep);
-				nmjm[o].print(count);
-				sep = ", ";
+				if (format[j] == *(nmjm[o].save))
+				{
+					printf("%s", sep);
+					nmjm[o].print(count);
+					sep = ", ";
+				}
+				o++;
 			}
-		o++;
+			j++;
 		}
-		j++;
 	}
 	va_end(count);
 	printf("\n");
