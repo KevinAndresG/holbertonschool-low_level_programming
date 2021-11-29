@@ -1,4 +1,4 @@
+SRC = $(wildcard *.c)
 CC = gcc
-SRC = $(wildcard find *.c)
 all:
-	$(CC) $(SR) -o school
+	$(CC) $(SRC) -o school
