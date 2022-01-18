@@ -4,11 +4,13 @@
  * @array: the array to the checked
  * @size: the size of the array
  * @value: the value to be searched
+ * Return: return the index of the value
  */
 
 int linear_search(int *array, size_t size, int value)
 {
 	size_t i = 0;
+
 	if (size == 0)
 	{
 		return (-1);
