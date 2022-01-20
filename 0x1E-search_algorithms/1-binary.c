@@ -13,32 +13,32 @@ int binary_search(int *array, size_t size, int value)
 	size_t l;
 	size_t mid;
 	size_t i;
-	size_t r;
+	/* size_t r; */
 
 	if (array == NULL)
 	{
 		return (-1);
 	}
-	r = size - 1;
+	/* r = size - 1; */
 	l = 0;
 
-	while (l <= r)
+	while (l < size)
 	{
 		printf("searching in array: ");
-		for (i = l; i <= r; i++)
+		for (i = l; i < size; i++)
 		{
-			if (i == r)
+			if (i == size - 1)
 			{
 				printf("%d\n", array[i]);
 			}
 			else
 				printf("%d, ", array[i]);
 		}
-		mid = (l + r) / 2;
+		mid = (l + (size - 1)) / 2;
 		if (array[mid] == value)
 			return (mid);
 		else if (array[mid] > value)
-			r = mid - 1;
+			size = mid;
 		else
 			l = mid + 1;
 	}
