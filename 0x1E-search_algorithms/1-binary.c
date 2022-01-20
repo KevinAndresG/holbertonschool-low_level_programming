@@ -10,20 +10,21 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-	size_t l = 0;
-	size_t r = size - 1;
-	size_t mid = 0;
-	size_t i = 0;
+	size_t l;
+	size_t mid;
+	size_t i;
+	size_t r;
 
 	if (array == NULL)
 	{
 		return (-1);
 	}
+	r = size - 1;
+	l = 0;
+
 	while (l <= r)
 	{
-
 		printf("searching in array: ");
-
 		for (i = l; i <= r; i++)
 		{
 			if (i == r)
